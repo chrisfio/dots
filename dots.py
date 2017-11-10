@@ -1,4 +1,7 @@
+#!/usr/bin/python3
+
 from random import randint
+
 
 #function to roll single di and adjust tokens between players/center
 def roll(player_index, player_scores, player_count):
@@ -39,8 +42,6 @@ for player_count in range(int(num_players)):
 	player_count += 1
 
 print("\nAll players have been entered, let's play!")
-
-
 
 #while loop until all but one player has no tokens
 while player_scores.count(0) < (player_count-1):
